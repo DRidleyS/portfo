@@ -18,9 +18,10 @@ def home():
 @app.route("/<article_name>")
 def view_article(article_name):
     if article_name == "thanks":
-        return render_template("thanks.html")
+        return render_template("cargallery.html")
     else:
         return render_template("index.html")
+
 
 def write_to_csv(data):
     with open("database.csv", mode='a') as database:
