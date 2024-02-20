@@ -1,28 +1,27 @@
 from flask import Flask, render_template, request
+from flask_mail import Mail, Message
 import csv
+from google.oauth2.credentials import Credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
+from google.auth.transport.requests import Request
+from googleapiclient.discovery import build
+from email.mime.text import MIMEText
+import base64
+import os
 
 app = Flask(__name__)
 
-@app.route("/", methods=['POST', 'GET'])
-def home():
-    '''
-    This is the home route, the if statement is only used upon form submission
-    '''
-    if request.method == 'POST':
-        data = request.form.to_dict()
-        write_to_csv(data)
-        return view_article("thanks")
+# Flask-Mail configuration
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] = 'dorianridley@gmail.com'
+app.config['MAIL_PASSWORD'] = 'NotMyRealPassword'
+app.config['MAIL_DEFAULT_SENDER'] = 'dorianridley@gmail.com'
 
-    return render_template("index.html")
+mail = Mail(app)
 
-@app.route("/<article_name>")
-def view_article(article_name):
-    if article_name == "thanks":
-        return render_template("cargallery.html")
-    else:
-        return render_template("index.html")
-
-
+# CSV writer for logging messages sent through contact form
 def write_to_csv(data):
     with open("database.csv", mode='a') as database:
         name = data["name"]
@@ -30,6 +29,73 @@ def write_to_csv(data):
         message = data["message"]
         csv_writer = csv.writer(database, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow([name, email, message])
+
+# CSV reader for reading the messages sent through contact form
+def read_csv_file():
+    data = []
+    with open('database.csv', 'r') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            data.append(row)
+    return data
+
+def create_message(sender, to, subject, message_text):
+    message = MIMEText(message_text)
+    message['to'] = to
+    message['from'] = sender
+    message['subject'] = subject
+    raw_message = base64.urlsafe_b64encode(message.as_bytes()).decode()
+    return {'raw': raw_message}
+
+def send_message(service, user_id, message):
+    try:
+        message = service.users().messages().send(userId=user_id, body=message).execute()
+        print('Message Id: %s' % message['id'])
+        return message
+    except Exception as e:
+        print('An error occurred: %s' % e)
+        return None
+
+# Email sender for sending the messages sent through contact form
+def send_email_with_csv_contents():
+    csv_data = read_csv_file()
+    email_body = "\n".join([",".join(row) for row in csv_data])
+
+    creds = None
+    if os.path.exists('token.json'):
+        creds = Credentials.from_authorized_user_file('token.json')
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
+            creds = flow.run_local_server(port=0)
+        with open('token.json', 'w') as token:
+            token.write(creds.to_json())
+
+    service = build('gmail', 'v1', credentials=creds)
+    sender = 'dorianridley@gmail.com'
+    to = 'dorianridley@gmail.com'
+    subject = 'CSV File Contents'
+    message = create_message(sender, to, subject, email_body)
+    send_message(service, 'me', message)
+
+@app.route("/", methods=['POST', 'GET'])
+def home():
+    '''
+    Home route with a conditional statement for cool people that send me a message
+    '''
+    if request.method == 'POST':
+        data = request.form.to_dict()
+        write_to_csv(data)
+        send_email_with_csv_contents()
+        return cargallery()
+    return render_template("index.html")
+
+@app.route("/cargallery")
+def cargallery():
+    return render_template("cargallery.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)
