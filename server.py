@@ -15,6 +15,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 
+SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 load_dotenv()  # Load environment variables from .env file
 
 app = Flask(__name__)
