@@ -113,13 +113,13 @@ def send_email():
     message = request.form['message']
 
     # Define your CSV file path
-    csv_file_path = 'database.csv'
+    csv_file_path = os.path.join(os.path.dirname(__file__), 'database.csv')
 
     # Email content
     subject = "CSV File from Contact Form"
     body = f"Name: {name}\nEmail: {email}\nMessage: {message}\n\nPlease find the attached CSV file."
 
-    send_email_with_attachment('your_email@example.com', subject, body, csv_file_path)
+    send_email_with_attachment('dorianridley@gmail.com', subject, body, csv_file_path)
 
     return redirect('/')
 
