@@ -2,6 +2,7 @@ import os
 import smtplib
 import csv
 import base64
+import dotenv
 from flask import Flask, request, redirect, render_template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
