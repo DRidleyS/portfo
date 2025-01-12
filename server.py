@@ -1,16 +1,11 @@
 import os
-import smtplib
 import csv
 import base64
-import dotenv
 from flask import Flask, request, redirect, render_template
-from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email.mime.base import MIMEBase
-from email import encoders
 from dotenv import load_dotenv
 from email_service import send_email_with_attachment
-from flask_mail import Mail, Message
+from flask_mail import Mail
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
@@ -119,7 +114,7 @@ def send_email():
     subject = "CSV File from Contact Form"
     body = f"Name: {name}\nEmail: {email}\nMessage: {message}\n\nPlease find the attached CSV file."
 
-    send_email_with_attachment('dorianridley@gmail.com', subject, body, csv_file_path)
+    send_email_with_attachment(subject, body, csv_file_path)
 
     return redirect('/')
 

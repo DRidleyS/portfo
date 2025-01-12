@@ -19,8 +19,8 @@ def send_email_with_attachment(subject, body, csv_file_path):
     try:
         smtp_server = os.getenv('SMTP_SERVER')
         smtp_port = int(os.getenv('SMTP_PORT'))
-        sender_email = 'dorianridley@gmail.com'
-        receiver_email = 'dorianridley@gmail.com'
+        sender_email = os.getenv('EMAIL_USER')
+        receiver_email = os.getenv('EMAIL_USER')
         password = os.getenv('EMAIL_PASS')
 
         # Create the email
@@ -43,7 +43,7 @@ def send_email_with_attachment(subject, body, csv_file_path):
         # Add header as key/value pair to attachment part
         part.add_header(
             "Content-Disposition",
-            f"attachment; filename= {csv_file_path}",
+            f"attachment; filename= {os.path.basename(csv_file_path)}",
         )
 
         # Add attachment to message and convert message to string
