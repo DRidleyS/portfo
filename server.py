@@ -90,11 +90,11 @@ def home():
     '''
     Home route with a conditional statement for cool people that send me a message
     '''
-    if request.method == 'POST':
+    '''if request.method == 'POST':
         data = request.form.to_dict()
         write_to_csv(data)
         send_email_with_csv_contents()
-        return cargallery()
+        return cargallery()'''
     return render_template("index.html")
 
 @app.route("/cargallery")
@@ -116,7 +116,7 @@ def send_email():
 
     send_email_with_attachment(subject, body, csv_file_path)
 
-    return redirect('/')
+    return redirect('/cargallery')
 
 if __name__ == "__main__":
     app.run(debug=True)
