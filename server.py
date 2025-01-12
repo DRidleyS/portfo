@@ -28,13 +28,18 @@ mail = Mail(app)
 
 # CSV writer for logging messages sent through contact form
 def write_to_csv(data):
-    with open("database.csv", mode='a') as database:
-        name = data["name"]
-        email = data["email"]
-        message = data["message"]
-        csv_writer = csv.writer(database, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        csv_writer.writerow([name, email, message])
-
+    try:
+        file_path = os.path.join(os.path.dirname(__file__), 'database.csv')
+        with open(file_path, mode='a', newline='') as database:
+            name = data.get("name")
+            email = data.get("email")
+            message = data.get("message")
+            csv_writer = csv.writer(database, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            csv_writer.writerow([name, email, message])
+        print("Data written to CSV successfully.")
+    except Exception as e:
+        print(f"Failed to write to CSV: {e}")
+        
 # CSV reader for reading the messages sent through contact form
 def read_csv_file():
     data = []
