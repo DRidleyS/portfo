@@ -39,7 +39,7 @@ def write_to_csv(data):
         print("Data written to CSV successfully.")
     except Exception as e:
         print(f"Failed to write to CSV: {e}")
-        
+
 # CSV reader for reading the messages sent through contact form
 def read_csv_file():
     data = []

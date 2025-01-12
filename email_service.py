@@ -29,8 +29,8 @@ def send_email_with_attachment(subject, body, csv_file_path):
         msg['To'] = receiver_email
         msg['Subject'] = subject
 
-        # Add body to email
-        msg.attach(MIMEText(body, 'plain'))
+        # Add body to email with UTF-8 encoding
+        msg.attach(MIMEText(body, 'plain', 'utf-8'))
 
         # Open CSV file in binary mode
         with open(csv_file_path, "rb") as attachment:
