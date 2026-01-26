@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /static/uploads/
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://dsautocare.com/sitemap.xml
+Host: dsautocare.com

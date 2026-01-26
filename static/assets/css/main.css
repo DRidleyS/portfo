@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 /*
 	Dimension by HTML5 UP
@@ -598,42 +599,92 @@ input, select, textarea {
 			padding: 0;
 		}
 
-/* Icon */
+    /* Icon Styles */
+    .icon {
+      text-decoration: none;
+      border-bottom: none;
+      position: relative;
+    }
 
-	.icon {
-		text-decoration: none;
-		border-bottom: none;
-		position: relative;
-	}
+    .icon:before {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      text-transform: none !important;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 400;
+      line-height: inherit;
+    }
 
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
+    /* Hide label inside icon */
+    .icon > .label {
+      display: none;
+    }
 
-		.icon > .label {
-			display: none;
-		}
+    /* Solid icon weight */
+    .icon.solid:before {
+      font-weight: 900;
+    }
 
-		.icon:before {
-			line-height: inherit;
-		}
+    /* Brand icon font family */
+    .icon.brands:before {
+      font-family: 'Font Awesome 5 Brands';
+    }
 
-		.icon.solid:before {
-			font-weight: 900;
-		}
+    /* Center icon styling */
+    .center-icon:before {
+      font-size: 48px;
+      color: #e0e0e0;
+    }
 
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
+    /* Logo row layout */
+    .logo-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Remove or override the base side-logo styles that are too large for mobile */
+    /* Instead, define base styles that work for mobile first, then override for desktop */
+
+    .side-logo-left,
+    .side-logo-right {
+        position: absolute;
+        top: 10px;
+        height: 60px;  /* Mobile default: small size */
+        width: auto;
+        object-fit: contain;
+        z-index: 10;
+    }
+
+    .side-logo-left {
+        left: 10px;
+        float: none;  /* Disable float on mobile */
+        margin-right: 0;
+    }
+
+    .side-logo-right {
+        right: 10px;
+        float: none;  /* Disable float on mobile */
+        margin-left: 0;
+    }
+
+    /* Specific overrides for your logos (mobile-first) */
+    .side-logo-left.ds-logo {
+        height: 150px !important;  /* 2.5x bigger on mobile (from base 60px) */
+        width: auto !important;
+    }
+
+    .system-x-logo {
+        height: 60px !important;  /* Adjust this value as needed for mobile System X logo */
+        top: 47px !important;     /* Moved up by half of previous down adjustment (85px - 37.5px) */
+        width: auto !important;
+    }
 
 /* Image */
 
@@ -1329,7 +1380,7 @@ input, select, textarea {
 				}
 
 			#header .content p {
-				text-transform: uppercase;
+				text-transform: none;
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				line-height: 2;
@@ -1362,7 +1413,7 @@ input, select, textarea {
 					height: 2.75rem;
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
-					text-transform: uppercase;
+					text-transform: none;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
@@ -1664,4 +1715,308 @@ input, select, textarea {
 			font-size: 200%;
 		}
 
-		
+        /* Base layout for side-by-side (default) */
+        .testimonial-photos {
+          display: flex;
+          gap: 1rem;
+        }
+
+        /* Modifier: stack items vertically */
+        .testimonial-photos--stacked {
+          flex-direction: column;
+        }
+
+        /* Base styles for mobile */
+        #header {
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .header-top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 100%;
+          gap: 12px;
+        }
+
+        .logo-row {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 0;
+          z-index: 1;
+        }
+
+        .center-icon {
+          font-size: 28px;
+          color: #fff;
+        }
+
+        .content {
+          margin-top: 24px;
+          text-align: center;
+          padding: 0 12px;
+        }
+
+        nav ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+          list-style: none;
+          padding: 0;
+          margin-top: 24px;
+        }
+
+
+        /* Reset margins & padding */
+        html, body {
+          margin: 0;
+          padding: 0;
+        }
+
+        /* Header wrapper (mobile & desktop) */
+        .header-top,
+        .logo-bar {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 80px;          /* mobile default */
+          margin: 0;
+          padding: 0;
+          background-color: transparent;
+        }
+
+        /* Side logos */
+        .header-top img,
+        .logo-bar img {
+          position: absolute;
+          top: 10px;
+          height: 60px;          /* mobile default */
+          width: auto;
+          z-index: 10;
+        }
+
+        .header-top img.side-logo-left,
+        .logo-bar img.side-logo-left {
+          left: 10px;
+        }
+
+        .header-top img.side-logo-right,
+        .logo-bar img.side-logo-right {
+          right: 10px;
+        }
+
+        /* Centered icon row */
+        .logo-row {
+          margin-top: 20px;
+          text-align: center;
+          z-index: 5;
+        }
+
+        .logo-row .center-icon {
+          font-size: 32px;
+          color: #fff;
+        }
+
+        /* Main content */
+        .content {
+          margin-top: 20px;
+          padding: 0 16px;
+          text-align: center;
+        }
+
+        /* Navigation */
+        nav ul {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          list-style: none;
+          padding: 0;
+          margin: 24px 0 0;
+        }
+
+        nav a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        /* Desktop enhancements (≥768px) */
+        @media (min-width: 768px) {
+          .header-top,
+          .logo-bar {
+            justify-content: space-between;
+            gap: 0;
+            height: 100px;        /* desktop height */
+          }
+
+          .header-top img.side-logo-left,
+          .header-top img.side-logo-right,
+          .logo-bar img.side-logo-left,
+          .logo-bar img.side-logo-right {
+            height: 80px;         /* desktop height */
+            max-width: 900px;
+          }
+
+          nav ul {
+            flex-direction: row;
+            justify-content: center;
+            margin: 0;
+          }
+        }
+
+        /* specifically target the DS logo */
+        .side-logo-left.ds-logo {
+          height: 80px !important;   /* pick your mobile size */
+          width: auto !important;
+        }
+
+        /* bump up on desktop */
+        @media (min-width: 768px) {
+          .side-logo-left.ds-logo {
+            height: 200px !important; /* pick your desktop size */
+            transform: translateY(-35%) !important;
+
+          }
+        }
+
+        /* 1. Base (mobile): just a touch bigger */
+        .system-x-logo {
+          height: 70px !important;    /* tweak this to be slightly above your default */
+          width: auto !important;
+        }
+
+        /* 2. Desktop: noticeably larger */
+        @media (min-width: 768px) {
+          .system-x-logo {
+            height: 80px !important;  /* pick a size that stands out on larger screens */
+            width: auto !important;
+          }
+        }
+
+        .highlight-title {
+          font-family: 'Playfair Display', serif;
+          font-size: clamp(1.8rem, 6vw, 3rem);    /* scales from mobile → desktop */
+          font-weight: 700;
+          line-height: 1.2;
+          text-align: center;
+          margin: 0 auto 1rem;
+
+          /* text gradient  */
+          background: linear-gradient(90deg, #f4c542 0%, #e6a23c 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          /* subtle glow */
+          text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Optional: add a pastel highlighter bar behind it instead */
+        /*
+        .highlight-title {
+          position: relative;
+          display: inline-block;
+          padding: 0 0.2em;
+          color: #333;
+          font-family: 'Montserrat', sans-serif;
+          font-size: clamp(1.6rem, 5vw, 2.5rem);
+        }
+
+        .highlight-title::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0.1em;
+          width: 100%;
+          height: 0.4em;
+          background: rgba(244,197,66,0.4);
+          z-index: -1;
+          transform: skew(-10deg);
+        }
+        */
+
+        .inner {
+          font-family: 'Inter', sans-serif;
+        }
+
+        /* Desktop overrides: Only apply on larger screens */
+        @media screen and (min-width: 768px) {
+            .side-logo-left,
+            .side-logo-right {
+                height: 80px;  /* Desktop default */
+                top: 10px;     /* Keep positioning consistent */
+            }
+
+            .side-logo-left {
+                left: 20px;    /* Slightly more margin on desktop if needed */
+                margin-right: 90px;  /* Re-enable if you want spacing */
+                float: left;   /* Re-enable float for desktop layout if desired */
+            }
+
+            .side-logo-right {
+                right: 20px;
+                margin-left: 100px;  /* Re-enable if you want spacing */
+                float: right;  /* Re-enable float for desktop layout if desired */
+            }
+
+            .side-logo-left.ds-logo {
+                height: 200px !important;
+                transform: translateY(-35%) !important;  /* Keep your existing transform */
+            }
+
+            .system-x-logo {
+                height: 120px !important;  /* Larger for desktop if desired */
+            }
+        }
+
+        /* Ensure header-top doesn't change height unexpectedly */
+        .header-top {
+            height: 80px;  /* Fixed height for mobile */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* For even smaller mobiles (e.g., max-width: 480px), you can add further tweaks if needed */
+        @media screen and (max-width: 480px) {
+            .side-logo-left,
+            .side-logo-right {
+                height: 50px;  /* Even smaller if the 60px feels too big */
+                top: 15px;     /* Adjust vertical position if needed */
+            }
+
+            .side-logo-left.ds-logo {
+                height: 120px !important;  /* 2.4x bigger on small mobile (from base 50px) */
+            }
+
+            .system-x-logo {
+                height: 50px !important;
+                top: 45px !important;      /* Moved up by half of previous down adjustment (75px - 30px) */
+            }
+        }
+        /* Increase vertical spacing between fields so labels don't appear attached to the wrong input */
+        #contact-fields .field {
+          margin-top: 1rem;          /* space above each field block */
+        }
+
+        /* Keep the very first field from adding extra top space */
+        #contact-fields .field:first-child {
+          margin-top: 0;
+        }
+
+        /* Ensure labels sit clearly above inputs */
+        #contact-fields .field label {
+          display: block;
+          margin-top: 0.35rem;      /* small extra breathing room above the label text */
+          margin-bottom: 0.35rem;   /* consistent gap between label and input */
+          line-height: 1.15;
+        }

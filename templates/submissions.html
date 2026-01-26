@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin – Submissions</title>
+  <style>
+    :root {
+      --brand-red:   #c92026;
+      --brand-gold:  #d4af37;
+      --brand-white: #ffffff;
+      --brand-light: #f5f5f5;
+      --text-dark:   #000000;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: var(--brand-red);
+      color: var(--text-dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2em auto;
+      background-color: var(--brand-white);
+      padding: 1.5em;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    a.logout {
+      float: right;
+      font-size: 0.9em;
+      color: var(--brand-gold);
+      text-decoration: none;
+      margin-top: 0.2em;
+    }
+
+    h1, h2 {
+      color: var(--brand-gold);
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5em;
+      background-color: var(--brand-white);
+    }
+
+    th, td {
+      padding: 0.6em;
+      border: 1px solid var(--brand-light);
+      text-align: left;
+      color: var(--text-dark);
+      vertical-align: top;
+    }
+
+    th {
+      background-color: var(--brand-light);
+    }
+
+    tr:nth-child(even) {
+      background-color: var(--brand-light);
+    }
+
+    form.inline {
+      display: inline;
+      margin: 0;
+    }
+
+    button {
+      background-color: var(--brand-gold);
+      color: var(--text-dark);
+      border: 1px solid var(--brand-red);
+      padding: 0.4em 0.8em;
+      margin-right: 0.4em;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: var(--brand-white);
+      color: var(--brand-gold);
+      border-color: var(--brand-gold);
+    }
+
+    .no-submissions {
+      color: #444;
+      font-style: italic;
+      padding: 0.5em 0;
+    }
+
+    .small {
+      font-size: 0.9em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>
+      Submissions
+      <a class="logout" href="{{ url_for('adminlogout') }}">Logout</a>
+    </h1>
+
+    {% for bucket_name, bucket in [
+        ('Inbox', inbox),
+        ('Accepted', accepted),
+        ('Completed', completed),
+        ('Trash', trash)
+      ] %}
+      <h2>{{ bucket_name }}</h2>
+
+      {% if bucket_name == 'Inbox' %}
+        <form method="post" action="{{ url_for('clear_inbox') }}" class="inline">
+          <button type="submit">Clear Inbox</button>
+        </form>
+      {% endif %}
+
+      {% if bucket %}
+        <table>
+          <thead>
+            <tr>
+              {% for h in headers %}
+                <th>{{ h }}</th>
+              {% endfor %}
+              <th>Received</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in bucket %}
+              <tr>
+                {% for h in headers %}
+                  <td>
+                    {% if row.get(h) is defined %}
+                      {{ row[h] }}
+                    {% else %}
+                      <span class="small">—</span>
+                    {% endif %}
+                  </td>
+                {% endfor %}
+                <td class="small">{{ row.get('Timestamp', '') }}</td>
+                <td>
+                  {% if bucket_name == 'Inbox' %}
+                    <form method="post" action="{{ url_for('accept_job', id=row['id']) }}" class="inline">
+                      <button type="submit">Accept</button>
+                    </form>
+                  {% endif %}
+
+                  {% if bucket_name in ['Inbox', 'Accepted'] %}
+                    <form method="post" action="{{ url_for('complete_job', id=row['id']) }}" class="inline">
+                      <button type="submit">Complete</button>
+                    </form>
+                  {% endif %}
+
+                  {% if bucket_name in ['Inbox', 'Accepted', 'Completed'] %}
+                    <form method="post" action="{{ url_for('delete_job', id=row['id']) }}" class="inline">
+                      <button type="submit">Delete</button>
+                    </form>
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <p class="no-submissions">No submissions in {{ bucket_name.lower() }}.</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</body>
+</html>

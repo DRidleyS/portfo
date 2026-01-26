@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://dsautocare.com/testimonial_form" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Your Story</title>
+  <style>
+    :root {
+      --primary-color: #555555;
+      --gold: #D4AF37;              /* DS Auto Care gold for headers */
+      --bg-page: #B31217;           /* DS Auto Care red behind the form */
+      --bg-form: #FFFFFF;
+      --text-color: #333333;
+      --radius: 6px;
+      --font-base: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-page);
+      color: var(--text-color);
+      font-family: var(--font-base);
+      line-height: 1.5;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      background: var(--bg-form);
+      max-width: 600px;
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+    }
+
+    /* Gold header styling */
+    h1 {
+      font-size: 1.9rem;
+      text-align: center;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    h1::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin: 0.5rem auto 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      border: 1px solid #DDD;
+      border-radius: var(--radius);
+      transition: border-color 0.2s;
+      background: #FFF;
+    }
+
+    input[type="text"]:focus,
+    input[type="date"]:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 4px rgba(85, 85, 85, 0.2);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .file-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    input[type="file"] {
+      padding: 0.4rem;
+      cursor: pointer;
+    }
+
+    .photo-preview img {
+      max-width: 100%;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 0.5rem;
+    }
+
+    .submit-btn {
+      align-self: flex-end;
+      padding: 0.75rem 2rem;
+      background: var(--primary-color);
+      color: #FFF;
+      font-size: 1rem;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .submit-btn:hover {
+      background: #333333;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 1.5rem 1rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>DS Auto Care Testimonial: Before & After</h1>
+    <form action="/submit-testimonial" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input id="name" type="text" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="car">Your Car</label>
+        <input id="car" type="text" name="car" required>
+      </div>
+
+      <div class="form-group">
+        <label for="service_type">Type of Service</label>
+        <select id="service_type" name="service_type">
+          <option value="detailing">Detailing</option>
+          <option value="mechanical">Mechanical</option>
+          <option value="restoration">Restoration</option>
+          <option value="performance">Performance Upgrade</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="service_date">Date of Service</label>
+        <input id="service_date" type="date" name="service_date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="testimonial">Tell Us About the Transformation</label>
+        <textarea id="testimonial" name="testimonial" placeholder="Describe the before & after..." required></textarea>
+      </div>
+
+      <div class="form-group file-group">
+        <label for="before_photo">Before Photo</label>
+        <input id="before_photo" type="file" name="before_photo" accept="image/*">
+        <div class="photo-preview" id="before-preview"></div>
+      </div>
+
+      <div class="form-group file-group">
+        <label for="after_photo">After Photo</label>
+        <input id="after_photo" type="file" name="after_photo" accept="image/*">
+        <div class="photo-preview" id="after-preview"></div>
+      </div>
+
+      <input class="submit-btn" type="submit" value="Submit Your Testimonial">
+    </form>
+  </div>
+
+  <script>
+    const previewFile = (inputEl, previewEl) => {
+      inputEl.addEventListener('change', e => {
+        previewEl.innerHTML = '';
+        const file = e.target.files[0];
+        if (!file) return;
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(file);
+        previewEl.appendChild(img);
+      });
+    };
+
+    previewFile(
+      document.getElementById('before_photo'),
+      document.getElementById('before-preview')
+    );
+
+    previewFile(
+      document.getElementById('after_photo'),
+      document.getElementById('after-preview')
+    );
+  </script>
+</body>
+</html>
