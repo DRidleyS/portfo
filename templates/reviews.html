@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="canonical" href="https://dsautocare.com/reviews" />
+  <title>Customer Testimonials</title>
+  <style>
+    :root {
+      --bg-page: #B31217;           /* DS Auto Care red */
+      --bg-content: #FFFFFF;        /* white cards */
+      --text-color: #333333;
+      --primary-color: #555555;     /* dark grey accent */
+      --gold: #D4AF37;              /* DS Auto Care gold */
+      --shadow: rgba(0, 0, 0, 0.1);
+      --radius: 6px;
+      --font-base: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem 1rem;
+      background: var(--bg-page);
+      color: var(--text-color);
+      font-family: var(--font-base);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      margin-bottom: 1.5rem;
+      font-size: 2.4rem;
+      text-align: center;
+      color: var(--gold);
+      position: relative;
+    }
+
+    h1::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin: 0.5rem auto 0;
+    }
+
+    .card {
+      background: var(--bg-content);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
+      color: var(--gold);
+    }
+
+    .card p {
+      margin-bottom: 1rem;
+    }
+
+    .card p strong {
+      color: var(--primary-color);
+    }
+
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .photos > div {
+      flex: 1 1 45%;
+      background: #fafafa;
+      padding: 0.75rem;
+      border-radius: var(--radius);
+      text-align: center;
+    }
+
+    .photos h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+
+    .photos img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 6px var(--shadow);
+    }
+
+    @media (max-width: 600px) {
+      .photos > div {
+        flex: 1 1 100%;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Before & After: DS Auto Care Stories</h1>
+    {% for review in reviews %}
+      <div class="card">
+        <h3>{{ review['name'] }} – {{ review['car'] }}</h3>
+        <p><strong>Service Date:</strong> {{ review['date'] }}</p>
+        <p>{{ review['testimonial'] }}</p>
+        <div class="photos">
+          <div>
+            <h4>Before</h4>
+            <img src="{{ url_for('static', filename='uploads/' + review['before']) }}"
+                 alt="Before photo of {{ review['car'] }}">
+          </div>
+          <div>
+            <h4>After</h4>
+            <img src="{{ url_for('static', filename='uploads/' + review['after']) }}"
+                 alt="After photo of {{ review['car'] }}">
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>

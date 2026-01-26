@@ -1,4 +1,246 @@
-,,
-,,
-,,
-,,
+id,Timestamp,Name,Email,Car,Phone,Is Mobile,Contact Method,Best Time to Call,Preferred Appointment Time,Message,Vehicle Type,Services,Total,Status
+eafe4a13-121a-42c9-afdd-ea1c81a0cbe0,2025-09-14 21:15:14,,,,,no,none,,,,,,,trash
+47f56c33-b065-4731-abea-bfbb2f6f8ff5,2025-09-14 21:15:26,,,,,no,none,,,,,,,trash
+5f44eb4e-9114-4caa-93da-1e2bbbb4fe71,2025-09-14 21:15:43,,,,,no,none,,,,,,,trash
+da7ed04a-661a-4b07-a93f-e58da0380cd1,2025-09-14 21:16:38,,,,,no,none,,,,,,,trash
+efcba150-8edd-4351-bda7-eea1fe702924,2025-09-14 21:16:42,,,,,no,none,,,,,,,trash
+2cfe903c-69b6-4464-99b1-237058aecd64,2025-09-14 21:18:38,,,,,no,none,,,,,,,trash
+bca5b589-b88d-4a48-bf52-38d5a9762af0,2025-09-14 21:18:45,,,,,no,none,,,,,,,trash
+f1f5da36-9d52-4eaf-be9a-b7da1fa82670,2025-09-14 21:19:08,,,,,no,none,,,,,,,trash
+3d2a093b-785b-4c8f-bf03-607d245b5537,2025-09-14 21:21:48,,,,,no,none,,,,,,,trash
+2c27569b-b808-4251-8fe6-9ad1adc2f3f2,2025-09-14 21:23:26,,,,,no,none,,,,,,,trash
+8ae415ef-3aa1-4e64-b582-6075d69dc361,2025-09-14 21:26:11,,,,,no,none,,,,,,,trash
+e18f644d-7031-455a-8c7c-e89c51c37c23,2025-09-14 21:26:16,test,dorianridley@gmail.com,test car,7075339389,yes,email,now,here now,testing testing 123,,,,trash
+ce8ab8e4-e94f-40d7-878c-1e382571200f,2025-09-14 21:28:07,,,,,no,none,,,,,,,trash
+422b8244-60a9-4e86-b40f-ddfe18b51d04,2025-09-14 21:28:19,,,,,no,none,,,,,,,trash
+917fee0f-acac-474f-8004-c60c9c8cd140,2025-09-14 21:30:15,,,,,no,none,,,,,,,trash
+d2d25535-5fc6-42f2-9750-166891ee937d,2025-09-14 21:30:26,,,,,no,none,,,,,,,trash
+d3b8ff9f-a1b3-4d22-91f2-b5e52e3d8698,2025-09-14 21:30:41,,,,,no,none,,,,,,,trash
+a232a22c-1b37-4ac4-ac09-645edecea21d,2025-09-14 21:39:03,,,,,no,none,,,,,,,trash
+3962768b-2758-40f6-b2db-b36a2705e40d,2025-09-14 21:39:04,,,,,no,none,,,,,,,trash
+ee7ecb32-adc2-4ce3-829b-619131468556,2025-09-14 21:40:11,,,,,no,none,,,,,,,trash
+d2428199-eddc-4a02-b6cc-17f9cf84c179,2025-09-14 21:40:48,,,,,no,none,,,,,,,trash
+8a1449c1-862b-4e7a-9bc1-30f08a80bfbe,2025-09-14 21:41:26,,,,,no,none,,,,,,,trash
+f66bd622-281e-4207-96cc-7d81c9faefd7,2025-09-14 21:41:39,testagain,dorianridley@gmail.com,testcar,7075339389,yes,call,now,now,please work for me baby,,,,trash
+ef6090be-f2b3-42c2-87df-8d6b2815012f,2025-09-14 21:42:20,,,,,no,none,,,,,,,trash
+fc11d204-0625-485b-9f69-bc7d9b0b2ee8,2025-09-14 21:42:25,,,,,no,none,,,,,,,trash
+55d07583-7525-4062-af52-aeb543d49a47,2025-09-14 21:43:10,,,,,no,none,,,,,,,trash
+5dc08b5c-d29e-42c6-8ab0-2cbdec11f58e,2025-09-14 21:43:16,,,,,no,none,,,,,,,trash
+464b19b1-796b-4750-9c43-c40198701475,2025-09-14 21:43:18,,,,,no,none,,,,,,,trash
+d75070c6-8560-4952-80ee-cdab47e67671,2025-09-14 21:44:02,,,,,no,none,,,,,,,trash
+d2f2929c-6b8c-4dc4-bda2-daa4e30d9903,2025-09-14 21:44:07,,,,,no,none,,,,,,,trash
+214d8d66-b6d9-4398-84c4-df91c4c63069,2025-09-14 21:45:57,,,,,no,none,,,,,,,trash
+1d3eec95-e820-4db5-b952-f2cf290f9890,2025-09-14 21:47:27,,,,,no,none,,,,,,,trash
+7ed0ff83-4446-4864-b1f2-8203e79895d8,2025-09-14 21:49:46,,,,,no,none,,,,,,,trash
+115dc25b-c16e-481f-b6a4-ba26b96f92f2,2025-09-14 21:50:22,,,,,no,none,,,,,,,trash
+621a22ab-97c8-41d6-aab4-89b434414461,2025-09-14 21:50:41,,,,,no,none,,,,,,,trash
+9087f9e7-7d02-4b5a-9228-377a8764c494,2025-09-14 21:50:50,,,,,no,none,,,,,,,trash
+93048b62-4b82-49e9-a0bc-fbf3b182e687,2025-09-14 21:50:55,,,,,no,none,,,,,,,trash
+b01c496c-775f-465b-b436-d4ad411c71d5,2025-09-14 21:51:36,,,,,no,none,,,,,,,trash
+0bcc9339-5c69-424a-ab5a-7a328d2b97cd,2025-09-14 21:52:23,,,,,no,none,,,,,,,trash
+8fbdfd4d-ed34-4196-9453-653aec07c0f7,2025-09-14 21:55:32,,,,,no,none,,,,,,,trash
+19794a70-0a21-4f6e-af1e-4bc22665efbf,2025-09-14 21:56:17,,,,,no,none,,,,,,,trash
+cec5b9c9-3ccf-4428-9149-a1a4ac76a155,2025-09-14 21:57:36,,,,,no,none,,,,,,,trash
+822a3c3b-81fa-412f-8f7a-2fbd0cea549e,2025-09-14 22:00:39,,,,,no,none,,,,,,,trash
+34877cc0-af3b-4570-be30-1e42f9627ed6,2025-09-14 22:01:06,,,,,no,none,,,,,,,trash
+1743d2a3-d06d-47cd-bc12-b9b08b1c7c6a,2025-09-14 22:02:15,,,,,no,none,,,,,,,trash
+892255ec-9560-4a9c-b2b9-744cdef0e512,2025-09-14 22:02:47,,,,,no,none,,,,,,,trash
+0d516a63-7198-4007-9988-3ea7e14c6684,2025-09-14 22:02:59,,,,,no,none,,,,,,,trash
+29226d8b-3632-4834-8ff5-6399b58844a2,2025-09-14 22:03:46,,,,,no,none,,,,,,,trash
+47c26054-67d2-443d-8de8-ca084f505566,2025-09-14 22:04:31,,,,,no,none,,,,,,,trash
+ef8c9e05-cc68-4183-b4ff-1dc28cf1cb8e,2025-09-14 22:04:57,,,,,no,none,,,,,,,trash
+f17628e6-ac9d-4e91-a246-c4a90f6622e1,2025-09-14 22:06:57,,,,,no,none,,,,,,,trash
+de9d09dc-21c9-4a22-8bae-dd35005df53f,2025-09-14 22:08:47,,,,,no,none,,,,,,,trash
+02d332d9-7ceb-4406-b002-dbc8c4a94107,2025-09-14 22:09:36,,,,,no,none,,,,,,,trash
+cbf5c393-f085-42ba-ab56-e4a682364897,2025-09-14 22:10:50,,,,,no,none,,,,,,,trash
+2cfd8880-d023-4101-8cc8-5c13c1741cc0,2025-09-14 22:12:01,,,,,no,none,,,,,,,trash
+0127a13e-d233-4ece-a687-b37883637b4a,2025-09-14 22:13:02,,,,,no,none,,,,,,,trash
+5e700792-0b77-41c0-9cf1-3cdf2793fb6c,2025-09-14 22:13:04,,,,,no,none,,,,,,,trash
+b53c9419-e1ba-44a0-945c-3e6153287b29,2025-09-14 22:13:18,,,,,no,none,,,,,,,trash
+7f6763d0-92b0-4bc9-90ad-10a01ddde949,2025-09-14 22:13:55,,,,,no,none,,,,,,,trash
+f4be89f1-1d43-4400-86bb-84848ee41bf9,2025-09-14 22:16:38,,,,,no,none,,,,,,,trash
+048b916e-09a1-47cc-8e37-5249b26e0a2a,2025-09-14 22:19:14,,,,,no,none,,,,,,,trash
+a11fca65-cb75-48c5-87ca-c2438e116799,2025-09-14 22:20:52,,,,,no,none,,,,,,,trash
+5d7b6531-4921-454d-8c02-86a292c93d83,2025-09-14 22:24:12,,,,,no,none,,,,,,,trash
+21f9af40-c3fe-47e9-81d7-d2dc00cc5a2e,2025-09-14 22:24:49,,,,,no,none,,,,,,,trash
+409820d0-99f2-4c15-9dd6-f48d2f663980,2025-09-14 22:25:06,,,,,no,none,,,,,,,trash
+fdfaea52-fc7a-46e3-9243-72d4d549267f,2025-09-14 22:25:24,,,,,no,none,,,,,,,trash
+dd7661b6-f26d-4b48-b3b6-fea840bcc369,2025-09-14 22:25:31,,,,,no,none,,,,,,,trash
+6a61ed2a-5d2a-4acc-98c9-792e19dcddeb,2025-09-14 22:25:43,,,,,no,none,,,,,,,trash
+9035c357-b832-4f2b-bab3-92141752584a,2025-09-14 22:26:21,,,,,no,none,,,,,,,trash
+5e13cebb-3983-4978-985f-7e3d0b0e3488,2025-09-14 22:29:10,,,,,no,none,,,,,,,trash
+258d57c5-a3a4-4579-aac9-7c2385b94766,2025-09-14 22:31:14,dorian,Dorianridley@gmail.com,recenttest,7075339389,yes,call,now,here,recenttestmessage,,,,trash
+43bec75f-91c4-4f43-8cc9-91d91a700801,2025-09-14 22:31:24,,,,,no,none,,,,,,,trash
+4d5c569e-f76c-44c1-821c-f6898ecc03cb,2025-09-14 22:31:33,,,,,no,none,,,,,,,trash
+03cf1210-d084-49ee-967f-667a80b32c5b,2025-09-14 22:33:23,,,,,no,none,,,,,,,trash
+b290c2ab-5d90-47e2-971d-1b938fb8848a,2025-09-14 22:33:24,,,,,no,none,,,,,,,trash
+682ac96d-1dc7-4e38-bf65-543078787f00,2025-09-14 22:33:33,,,,,no,none,,,,,,,trash
+0a312ac9-f414-4cf0-9a65-2876055e6111,2025-09-14 22:36:21,,,,,no,none,,,,,,,trash
+63d75a75-8faf-42f7-8e6d-99ec60bc8282,2025-09-14 22:37:33,,,,,no,none,,,,,,,trash
+a8ca7a5e-3261-4536-837b-fcfb4c5952bd,2025-09-14 22:39:30,,,,,no,none,,,,,,,trash
+bad0fb40-88b1-4828-99f7-6ec222a783b8,2025-09-14 22:42:38,,,,,no,none,,,,,,,trash
+1e817c9d-be9a-4489-864a-66c68dffd807,2025-09-14 22:43:50,,,,,no,none,,,,,,,trash
+e1a0ca0c-3392-4b81-835f-9cc4e7f05637,2025-09-14 22:45:25,,,,,no,none,,,,,,,trash
+4c134f4c-f81c-43bf-812a-1f0edae9680b,2025-09-14 22:45:36,,,,,no,none,,,,,,,trash
+21410039-ab63-433a-914c-00913028a4a4,2025-09-14 22:46:40,,,,,no,none,,,,,,,trash
+f4c47f33-3472-44dd-9114-aaf8f9306276,2025-09-14 22:50:40,,,,,no,none,,,,,,,trash
+62e21375-0afa-4e80-9437-afc8dc2d1f7c,2025-09-14 22:50:47,,,,,no,none,,,,,,,trash
+f6f3cc4e-6f27-4697-aa28-bc34507836bd,2025-09-14 22:51:42,,,,,no,none,,,,,,,trash
+827584ff-dca6-4dd9-bf6e-993da44f9db2,2025-09-14 22:54:06,,,,,no,none,,,,,,,trash
+13ec9d6e-d5b6-4064-9642-a2c97c209efc,2025-09-14 22:57:59,,,,,no,none,,,,,,,trash
+a20afb9f-f7a0-4eca-8f1b-37d227db71c5,2025-09-14 22:59:43,,,,,no,none,,,,,,,trash
+484d48f2-8f4e-4416-96aa-9a4b6348f73a,2025-09-14 23:02:45,,,,,no,none,,,,,,,trash
+68b223c3-b4bd-4b32-8a79-6fad32a52d27,2025-09-14 23:03:16,dorianfinaltest,dorianridley@gmail.com,finaltestingcar,7075339389,no,call,here,now,finaltestingmessagefortoday,,,,trash
+5260c4c8-57e5-45c6-a8c8-7815baf9015b,2025-09-14 23:04:50,,,,,no,none,,,,,,,trash
+23791c35-cb9c-400e-8c72-ac509d1cf030,2025-09-14 23:04:54,,,,,no,none,,,,,,,trash
+41e03f28-4e7d-4e1f-a02c-fce9e66a108f,2025-09-14 23:06:30,,,,,no,none,,,,,,,trash
+35949a0a-7f38-415e-beb6-29e9135b2b7d,2025-09-14 23:06:57,,,,,no,none,,,,,,,trash
+0d2d45e4-74e8-4d6c-b928-ce53bc4422f0,2025-09-14 23:07:15,,,,,no,none,,,,,,,trash
+a69ca9ca-835c-43c4-847e-9aec078344aa,2025-09-14 23:08:29,,,,,no,none,,,,,,,trash
+17f74878-d7d1-4137-80c3-baf550b74143,2025-09-14 23:09:04,,,,,no,none,,,,,,,trash
+424f5859-f6b9-42af-911e-3a6249313818,2025-09-14 23:11:26,,,,,no,none,,,,,,,trash
+c6d44f07-fc22-42ba-b7db-7e079b2761c0,2025-09-14 23:11:28,,,,,no,none,,,,,,,trash
+66c0a62d-f251-4322-8b55-8562da434237,2025-09-14 23:12:38,,,,,no,none,,,,,,,trash
+98983362-cd6d-42a8-b700-c221676140a7,2025-09-14 23:14:12,,,,,no,none,,,,,,,trash
+33488f41-f033-4a12-8ead-ea8f50ea47bf,2025-09-14 23:16:55,,,,,no,none,,,,,,,trash
+1b890e36-6081-4dd3-adb1-b404d24d76ff,2025-09-14 23:17:27,,,,,no,none,,,,,,,trash
+21d43242-07c2-4c35-af0f-fe35f80547bb,2025-09-14 23:19:04,,,,,no,none,,,,,,,trash
+cbe443d8-ee85-4c9d-900a-183ae6ecb927,2025-09-14 23:20:28,,,,,no,none,,,,,,,trash
+c9c47bcd-ad11-4a39-97ee-34bd82793e41,2025-09-14 23:21:12,,,,,no,none,,,,,,,trash
+6a57e519-7e15-4bbb-9785-fa5de26b7597,2025-09-14 23:21:35,,,,,no,none,,,,,,,trash
+f0851ffd-b1aa-42ba-bc20-c96f80e3db3f,2025-09-14 23:22:14,,,,,no,none,,,,,,,trash
+2964d7c7-c716-45d1-bd23-dfe5224714a7,2025-09-14 23:22:37,,,,,no,none,,,,,,,trash
+6ef96295-c786-4f6b-b781-a9337438237e,2025-09-14 23:26:12,,,,,no,none,,,,,,,trash
+64a1ee1f-b734-4135-83ae-fa0cbcb94653,2025-09-14 23:27:11,,,,,no,none,,,,,,,trash
+ac3a1c28-8da3-4d18-9697-c2c32ee3efd1,2025-09-14 23:27:33,,,,,no,none,,,,,,,trash
+9284055d-ca4d-49a6-838c-ff361bf15563,2025-09-14 23:29:26,,,,,no,none,,,,,,,trash
+265dad5e-7548-47b7-861a-cd300f2587fe,2025-09-14 23:29:31,,,,,no,none,,,,,,,trash
+6c1496d3-6097-4d91-8498-956e3ad41fbf,2025-09-14 23:33:11,,,,,no,none,,,,,,,trash
+084f73b4-65ae-4708-a32a-7be2c762b8c8,2025-09-14 23:33:21,,,,,no,none,,,,,,,trash
+c60414e4-0ec6-4975-8b5c-449dad48b6d2,2025-09-14 23:33:33,,,,,no,none,,,,,,,trash
+375267b5-ccb7-4f3c-80a2-d825a08f0dd6,2025-09-14 23:34:05,,,,,no,none,,,,,,,trash
+edc4ba2f-ba1d-4ebd-a18d-269dad065287,2025-09-14 23:37:08,,,,,no,none,,,,,,,trash
+7154ad6d-4748-43f5-8229-b7895643d806,2025-09-14 23:37:52,,,,,no,none,,,,,,,trash
+d0f49be7-3143-4fe6-8dec-7d6adf817440,2025-09-14 23:40:39,,,,,no,none,,,,,,,trash
+897d5d07-13f2-4329-b5e2-8eca5a83bb2b,2025-09-14 23:42:56,,,,,no,none,,,,,,,trash
+a4656402-01d7-435d-a270-5eb16393b796,2025-09-14 23:44:17,,,,,no,none,,,,,,,trash
+7727444a-b0ec-4543-be75-4151eccf7f76,2025-09-14 23:44:27,,,,,no,none,,,,,,,trash
+9608054f-f449-42de-b9d2-266787b1dad7,2025-09-14 23:44:46,,,,,no,none,,,,,,,trash
+9dc93acb-feb5-4bfc-a104-00cf8f4a42ec,2025-09-14 23:45:34,,,,,no,none,,,,,,,trash
+c84fb4bb-08d0-43cc-89aa-0191b03cf6cc,2025-09-14 23:46:02,,,,,no,none,,,,,,,trash
+65486f78-3b8a-4955-9f9a-e4ccbfb88412,2025-09-14 23:46:11,,,,,no,none,,,,,,,trash
+80566f9b-2f24-484d-9eea-83ca39417cc9,2025-09-14 23:47:21,,,,,no,none,,,,,,,trash
+c0ba099e-5e7a-4182-bb64-9c17f4e7a377,2025-09-14 23:47:27,,,,,no,none,,,,,,,trash
+f03bab04-f34e-4a98-b2db-846989be91fb,2025-09-14 23:48:46,,,,,no,none,,,,,,,trash
+db5b045b-86fb-46c4-8636-5bb49193ee17,2025-09-14 23:49:23,,,,,no,none,,,,,,,trash
+92479051-3ea1-446d-85d1-2e56e7b86d2d,2025-09-14 23:50:29,,,,,no,none,,,,,,,trash
+84f2585b-9e8e-483c-aa56-cfaca7c05856,2025-09-14 23:50:49,,,,,no,none,,,,,,,trash
+d2865cd5-ca8c-4269-b63e-b4f6c115c918,2025-09-14 23:52:46,,,,,no,none,,,,,,,trash
+8f7647dc-8ebe-41d5-a469-5c76c213d9e9,2025-09-14 23:54:54,,,,,no,none,,,,,,,trash
+b331dee2-4dc9-4156-a289-6b3337ce4af5,2025-09-14 23:57:46,,,,,no,none,,,,,,,trash
+0fb75a98-4429-47d1-ba15-36a88a5e3020,2025-09-14 23:58:16,,,,,no,none,,,,,,,trash
+deedf552-d54a-48e0-84d8-8028dcda7b63,2025-09-14 23:58:42,,,,,no,none,,,,,,,trash
+84945553-89b3-4296-abec-3d2a9eeca34f,2025-09-15 00:00:32,,,,,no,none,,,,,,,trash
+357365ea-e7d0-4d3d-b389-c2080a2f279f,2025-09-15 00:05:54,,,,,no,none,,,,,,,trash
+dba4a825-f33f-429d-826d-d86676108422,2025-09-15 00:06:48,,,,,no,none,,,,,,,trash
+26256d93-4483-4c79-825d-999dabc007ce,2025-09-15 00:07:09,,,,,no,none,,,,,,,trash
+a020b2db-0fc2-4181-a593-586ccf23d701,2025-09-15 00:07:52,,,,,no,none,,,,,,,trash
+b756676e-c84b-44ab-a9e9-c1cec0b40859,2025-09-15 00:08:03,,,,,no,none,,,,,,,trash
+2c05a534-715f-4e1f-b1fc-bb5687f7377b,2025-09-15 00:08:53,,,,,no,none,,,,,,,trash
+df002353-3ac9-44d2-9da5-7ba9d18357c0,2025-09-15 00:09:09,,,,,no,none,,,,,,,trash
+d3a695f6-7d59-460c-898f-38d04f0d9078,2025-09-15 00:09:32,,,,,no,none,,,,,,,trash
+71531f9d-5e60-4227-9501-0b84963183b6,2025-09-15 00:10:59,,,,,no,none,,,,,,,trash
+5fff29f3-f7db-405d-a99f-e2976aa3c057,2025-09-15 00:11:45,,,,,no,none,,,,,,,trash
+afe772f6-7bee-45ed-b137-32f3e9be3a46,2025-09-15 00:11:46,,,,,no,none,,,,,,,trash
+97c5eb49-745e-4b74-95bd-7ae2e65b6492,2025-09-15 00:11:53,,,,,no,none,,,,,,,trash
+d787438c-9ca7-4bcf-86d1-3adc7acbd75c,2025-09-15 00:13:12,,,,,no,none,,,,,,,trash
+b94b8939-e78b-4a6b-845b-19279e4fde83,2025-09-15 00:13:16,,,,,no,none,,,,,,,trash
+4c94aa04-e554-4ba8-acc0-a4709411f3b4,2025-09-15 00:15:03,,,,,no,none,,,,,,,trash
+54b87e02-5216-4807-88d6-1f382ab0e607,2025-09-15 00:16:39,,,,,no,none,,,,,,,trash
+70ca9aa7-c66e-4b93-9fb7-02a87974d39c,2025-09-15 00:19:16,,,,,no,none,,,,,,,trash
+640c0157-8c38-47ce-857f-a65ade96430c,2025-09-15 00:20:09,,,,,no,none,,,,,,,trash
+8e387583-b8c1-4913-97e8-0d3bc9857483,2025-09-15 00:20:12,,,,,no,none,,,,,,,trash
+160806ca-90dc-4253-9da2-bbd3f20793d1,2025-09-15 00:21:03,,,,,no,none,,,,,,,trash
+2565acb9-fb5d-4e8b-83bc-26a36542a8ba,2025-09-15 00:21:15,,,,,no,none,,,,,,,trash
+9c03e6bc-f22b-481b-8dd3-a3a922e4d998,2025-09-15 00:21:24,,,,,no,none,,,,,,,trash
+4b5d8704-a80f-4ac0-bd5d-4191a4cbea4f,2025-09-15 00:24:07,,,,,no,none,,,,,,,trash
+b7f6cdd2-0f09-4041-ac34-d5b40bc2de17,2025-09-15 00:24:17,,,,,no,none,,,,,,,trash
+9c23f488-beaa-4be5-9ff6-c50fc5cba141,2025-09-15 00:24:30,,,,,no,none,,,,,,,trash
+8dd01aad-bc53-49fa-ac71-ad3d045748fc,2025-09-15 00:24:30,,,,,no,none,,,,,,,trash
+746325ac-160c-402c-b244-04ddea7250c1,2025-09-15 00:25:47,,,,,no,none,,,,,,,trash
+4b6668fa-e75f-4d93-864a-6be3c4467e72,2025-09-15 00:26:16,,,,,no,none,,,,,,,trash
+b64789c3-be70-46a3-9a03-354d21ecba8e,2025-09-15 00:28:24,,,,,no,none,,,,,,,trash
+c12decfe-cbae-4884-bf68-dfa41280d987,2025-09-15 00:33:40,,,,,no,none,,,,,,,trash
+751c3d1b-7859-4731-896e-7b4065928b5b,2025-09-15 00:33:40,,,,,no,none,,,,,,,trash
+bf167157-21cb-48e2-9e23-774bfd1f8815,2025-09-15 00:33:46,,,,,no,none,,,,,,,trash
+58e238cb-30a2-4309-bdb5-c19675a19b80,2025-09-15 00:34:12,,,,,no,none,,,,,,,trash
+41a8e3bf-8794-45bf-b6c5-142c26f11ff0,2025-09-15 00:34:33,,,,,no,none,,,,,,,trash
+988c39b0-86da-4705-bab5-94bd5f24da00,2025-09-15 00:34:55,,,,,no,none,,,,,,,trash
+22f481af-5292-4faf-9fa9-7b384b0de94d,2025-09-15 00:35:01,,,,,no,none,,,,,,,trash
+375f80e1-715d-4640-95e9-85579dff6f76,2025-09-15 00:35:23,,,,,no,none,,,,,,,trash
+daebaea1-54fa-4007-b422-21ad2c27483d,2025-09-15 00:35:35,,,,,no,none,,,,,,,trash
+9192a03e-0df1-4e01-a1c6-ffa13fb9ae66,2025-09-15 00:36:07,,,,,no,none,,,,,,,trash
+420b7983-4e00-48a5-9875-3d63d21fd8b5,2025-09-15 00:36:47,,,,,no,none,,,,,,,trash
+7ab3fdc2-796d-41e9-a8ec-8b07a676f319,2025-09-15 01:28:15,actualfinaltest,dorianridley@gmail.com,reallythelasttestcar,7075339389,yes,email,now,nowandherepleaseeeeeeeee,the absolute last test that will ever be done,,,,trash
+e967e47b-7def-44c2-872b-f5941feed8d4,2025-09-15 03:36:52,Rocky,rockyjcarlin@gmail.com,Bmw m3 e30,7075339389,yes,email,Now,Here,Free system x if rocky gets an m3,,,,accepted
+29fa6d5f-a1e3-4b2c-932d-c749dac2ad7a,2025-09-15 03:40:05,Dorian Ridley,dorianridley@gmail.com,Miata,7075339389,no,none,Now,Here,Example.png,,,,trash
+412fd9c4-2da7-4790-924c-e119ee3cd229,2025-09-18 00:45:03,Dorian Ridley,dorianridley@gmail.com,Mazda miata,7075339389,yes,call,Now,Here,Lots of notes,,,,trash
+0fcc40e1-5d77-4c51-9083-b208264e7b91,2025-09-18 00:46:41,Sofya Khanenka,sofyahanenko@gmail.com,7074860”37,,yes,call,Now,Now,,,,,trash
+f25eef4b-cb5b-4ecb-bacd-216d3e8af52a,2025-09-18 01:56:06,Dorian Ridley,dorianridley@gmail.com,2024 MX5 Club 6MT BBR,7075339389,yes,call,Now,Here,Lots of notes,,,,trash
+4a110d00-f60e-409e-ad45-ccae8fc594b7,2025-09-19 00:18:19,Dorian Ridley-Smith,dorianridley@gmail.com,2024 mazder mioooder,7075339389,yes,call,Now,Here,Shidloads of notes,Large Truck,,4163,trash
+f3b453c8-3366-4d59-adc1-8783eb20945f,2025-09-19 00:42:17,Dorian RS,dorianridley@gmail.com,2025 718 Spyder RS,7075339389,yes,call,Now,Here,I need that spyder,2-Door Coupe,"Premium Exterior Wash, Clay Bar Decontamination",140,accepted
+072e581a-0b0d-403b-bb3b-22c463411f4a,2025-09-19 00:54:39,Test,test@test.com,Test,7075339389,yes,call,The,The,The,Large Truck,2-Step Paint Correction,690,trash
+57f0eded-ef8b-4ab3-afe3-3cf47ce5a992,2025-09-19 19:34:29,Simon Braham,simonoxfordcity@gmail.com,07789950995,,yes,email,Assp,,,2-Door Coupe,"Ceramic 3-Year (Paint Only), Interior Detail (Decontamination & Blow Clean)",935,accepted
+c924e211-1a24-4194-9116-afe20dacf3aa,2025-09-30 17:29:08,Calvin Smalley,calvin.smalley@googlemail.com,,3801738932,yes,none,Calvin Smalley,Calvin,"Attract keyword-driven visitors to your site with our AI-optimized solution, saving you money compared to costly paid ads. Ready to scale your business?
+
+https://ow.ly/QM6Y50WXBki",4-Door Sedan,"Premium Exterior Wash, Clay Bar Decontamination, 1-Step Paint Correction, 2-Step Paint Correction, Ceramic 1-Year (Paint Only), Ceramic 3-Year (Paint Only), Ceramic 5-Year (Paint Only), Lifetime Ceramic (Paint Only), Full Vehicle Temporary Ceramic Package (1-Year coating on Paint + Wheels/Glass/Trim Add-Ons), Full Vehicle Permanent Ceramic Package (Lifetime on Paint + Wheels/Glass/Trim Add-Ons), Interior Speed Clean (Wipe & Vacuum), Interior Detail (Decontamination & Blow Clean), Interior Deep Clean (Factory Reset), Interior Ceramic Protection (Leather, Vinyl, Plastic), Ceramic Carpet Protection",0,inbox
+2aa8d9e5-6c25-4e1f-87a9-54db1e48c90b,2025-10-04 08:53:20,Jacquie Northfield,jacquie.northfield@msn.com,,42405169,yes,none,Jacquie,Jacquie,"I certainly don't mean to bother you, but I just quickly wanted to make you aware of a new digital marketing application called Local Magic which generates qualified leads for your website by bringing in relevant organic traffic from Google, the technology behind this application has been recently awarded several US patents.  Information about the product can be found here https://www.mrmarketingres.com/local-magic/. Licensing the application costs $800/mo and there is no contract because it has a success rate of 87% in most industries.  We have case studies to illustrate the revenue we've generated for clients thus far and I'll be more than happy to provide you with a product demo over zoom if more internet leads would help your business grow.  You can reach me at marketing@mrmarketingres.com or 843-720-7301. If our product is not a fit just let me know and I'll add your company to our do not contact list and our sales team will not try to reach out to you again. Thanks!",,"Premium Exterior Wash, Clay Bar Decontamination, 1-Step Paint Correction, 2-Step Paint Correction, Ceramic 1-Year (Paint Only), Ceramic 3-Year (Paint Only), Ceramic 5-Year (Paint Only), Lifetime Ceramic (Paint Only), Full Vehicle Temporary Ceramic Package (1-Year coating on Paint + Wheels/Glass/Trim Add-Ons), Full Vehicle Permanent Ceramic Package (Lifetime on Paint + Wheels/Glass/Trim Add-Ons), Interior Speed Clean (Wipe & Vacuum), Interior Detail (Decontamination & Blow Clean), Interior Deep Clean (Factory Reset), Interior Ceramic Protection (Leather, Vinyl, Plastic), Ceramic Carpet Protection",0,inbox
+7239cd54-9a9a-4e4f-94d8-91f0a492049c,2025-10-06 18:19:47,Ndarscoma,aaemecfe@tacoblastmail.com,bmw,81992789938,no,call,,,"<a href=https://dog-house.sbs/>the dog house megaways демо в рублях на iphone</a> 
+https://dog-house.sbs 
+<a href=https://dog-house.sbs/>the dog house играть на деньги</a> 
+https://dog-house.sbs 
+<a href=https://dog-house.sbs/megaways>dog house megaways игровой автомат онлайн</a> 
+https://dog-house.sbs 
+<a href=https://dog-house.sbs/>house of the dog megaways slot</a> 
+https://dog-house.sbs 
+<a href=https://dog-house.sbs/>дог хаус играть онлайн</a> 
+https://dog-house.sbs 
+ 
+dog-house.sbs",Large Truck,,0,inbox
+51cd7700-ca3e-449e-beca-fe7ece6bca42,2025-10-06 20:28:45,Etta Whitley,whitley.etta@yahoo.com,,475442515,yes,none,Etta Whitley,Etta Whitley,"This is an open job position to be a website chat assistant. We currently have lots of different businesses hiring for these positions in all countries right now.
+
+Website chat assistants are the people who answer the customer’s live chat support or sales questions on a business’s website. The work is done online, normally from home.
+
+Read the full details here to complete your application if you are interested.  
+
+-----> https://tinyurl.com/3vcruwra",SUV,"Premium Exterior Wash, Clay Bar Decontamination, 1-Step Paint Correction, 2-Step Paint Correction, Ceramic 1-Year (Paint Only), Ceramic 3-Year (Paint Only), Ceramic 5-Year (Paint Only), Lifetime Ceramic (Paint Only), Full Vehicle Temporary Ceramic Package (1-Year coating on Paint + Wheels/Glass/Trim Add-Ons), Full Vehicle Permanent Ceramic Package (Lifetime on Paint + Wheels/Glass/Trim Add-Ons), Interior Speed Clean (Wipe & Vacuum), Interior Detail (Decontamination & Blow Clean), Interior Deep Clean (Factory Reset), Interior Ceramic Protection (Leather, Vinyl, Plastic), Ceramic Carpet Protection",0,inbox
+8c8cb914-2a66-4d76-9828-b5c21d6b3bf4,2025-10-31 16:55:10,Marsha Grover,grover.marsha@msn.com,,613021735,yes,email,Marsha Grover,Marsha Grover,"If you are anything like me you likely spend a lot of time taking photos with your mobile phone and posting them to Facebook or Instagram. Well, did you know that you can actually be earning hundreds, or even thousands of dollars each month just by uploading photos to Instagram?
+
+I was skeptical at first, but this system is the real deal! I got my hands on an evaluation copy of “ProfitGram” a few days ago and I’m already seeing the money flow into my account.
+
+=> https://tinyurl.com/4bffmxys",2-Door Coupe,"Premium Exterior Wash, Clay Bar Decontamination, 1-Step Paint Correction, 2-Step Paint Correction, Ceramic 1-Year (Paint Only), Ceramic 3-Year (Paint Only), Ceramic 5-Year (Paint Only), Lifetime Ceramic (Paint Only), Full Vehicle Temporary Ceramic Package (1-Year coating on Paint + Wheels/Glass/Trim Add-Ons), Full Vehicle Permanent Ceramic Package (Lifetime on Paint + Wheels/Glass/Trim Add-Ons), Interior Speed Clean (Wipe & Vacuum), Interior Detail (Decontamination & Blow Clean), Interior Deep Clean (Factory Reset), Interior Ceramic Protection (Leather, Vinyl, Plastic), Ceramic Carpet Protection",0,inbox
+4f682331-2216-4ccf-ae9e-bfd46e929b25,2025-11-06 18:24:30,Gordon Rich,grdnrch@duck.com,2025 Honda Pilot,4154006575,yes,call,,"on Cobb, just off Hoberg Dr.",,Large Truck,"Premium Exterior Wash, Interior Deep Clean (Factory Reset)",345,inbox
+6e9c290d-334e-4de4-8767-a9084dd6076a,2025-11-09 06:26:46,dorianridley@gmail.com,dorianridley@gmail.com,car,70753393444,yes,email,qQSqawd,awsedfAWSEF AWSEF,efSsefSEFSEF,2-Door Coupe,"2-Step Paint Correction, Full Vehicle Permanent Ceramic Package (Lifetime on Paint + Wheels/Glass/Trim Add-Ons), Interior Deep Clean (Factory Reset), Interior Ceramic Protection (Leather, Vinyl, Plastic), Ceramic Carpet Protection",3000,inbox
+79433c5b-a548-4082-a477-d888a7be2640,2025-11-11 04:17:25,Keenan Singh,keenan.singh@gmail.com,,413679240,yes,email,Keenan,Keenan,"Are you searching for a job that can be done right away? If so, countless businesses are hiring website chat support agents - no experience is needed, as full training will be provided.
+
+Click here to complete your application if you are interested.
+
+-----> https://themoneyfromhome.com",,"Premium Exterior Wash, Clay Bar Decontamination, 1-Step Paint Correction, 2-Step Paint Correction, Ceramic 1-Year (Paint Only), Ceramic 3-Year (Paint Only), Ceramic 5-Year (Paint Only), Lifetime Ceramic (Paint Only), Full Vehicle Temporary Ceramic Package (1-Year coating on Paint + Wheels/Glass/Trim Add-Ons), Full Vehicle Permanent Ceramic Package (Lifetime on Paint + Wheels/Glass/Trim Add-Ons), Interior Speed Clean (Wipe & Vacuum), Interior Detail (Decontamination & Blow Clean), Interior Deep Clean (Factory Reset), Interior Ceramic Protection (Leather, Vinyl, Plastic), Ceramic Carpet Protection",0,inbox
+d7343adc-ce98-48df-95df-8d8e42fa7aa9,2025-11-25 02:37:46,AhmetReamb,morrismi1@outlook.com,bmw,84886461587,no,call,,,"I'm Ahmet, a bank staff in a Turkish bank. I've been looking for someone who has the same nationality as you. A citizen of your country died in the recent earthquake in Turkey, he had in our bank fixed deposit of $11.5 million. 
+ 
+If my bank executive finds out about his death ,They would use the funds for themselves, I would like to prevent that from happening only if I get your cooperation, I knew about it because I was his account manager. Last week my bank held a meeting for the purpose of a bank audit to note abandoned deposit accounts. that's why I'm looking for a solution to deal with this situation because if my bank discovers his death, they will divert the funds to the board of directors.  I don't want that to happen. 
+ 
+I request your cooperation to introduce you as the kin/heir of the account as you are of the same nationality as him.  There is no risk;  the transaction is carried out under a legal agreement that protects you from infringement. I suggest we split the funds, 60/40 and 40 for me. I need this fund for my daughter's surgery so keep this info confidential. email me so i can provide you with more info  ahmetassky@outlook.com.",4-Door Sedan,,0,inbox
+d6aac31f-c4a6-44ad-8638-2168f8de5a7f,2025-11-26 11:49:02,Rene Whitley,whitley.rene@yahoo.com,,639829054,yes,email,Rene,Rene,"Supercharge dsautocare.com SEO standings, increase your search appearance and gain powerful backlinks! 
+BonusBacklinks.com - we deliver daily backlinks and bring organic traffic to your page EVERY DAY:
+
++ Get 85% OFF
++ Trusted daily seo backlinks
++ Real website visits
++ Price start from $1
++ Bonus coupon codes
+
+https://tiny.cc/bonusbacklinks-85off
+
+BonusBacklinks.com - daily seo backlinks and organic visits to boost your webpage everyday",4-Door Sedan,"Premium Exterior Wash, Clay Bar Decontamination, 1-Step Paint Correction, 2-Step Paint Correction, Ceramic 1-Year (Paint Only), Ceramic 3-Year (Paint Only), Ceramic 5-Year (Paint Only), Lifetime Ceramic (Paint Only), Full Vehicle Temporary Ceramic Package (1-Year coating on Paint + Wheels/Glass/Trim Add-Ons), Full Vehicle Permanent Ceramic Package (Lifetime on Paint + Wheels/Glass/Trim Add-Ons), Interior Speed Clean (Wipe & Vacuum), Interior Detail (Decontamination & Blow Clean), Interior Deep Clean (Factory Reset), Interior Ceramic Protection (Leather, Vinyl, Plastic), Ceramic Carpet Protection",0,inbox
+0dff4d43-9ff5-4d44-858e-b595b3716c60,2025-11-27 19:40:57,segdr g,agerrbkgfaekgf@riruhgaiu.com,th sdzht,sdtzh zsh,yes,call,drtsys rthsrth,dyjfjsfhsrt h,thsxdfhsrfh srthszrh,2-Door Coupe,Premium Exterior Wash,75,inbox
