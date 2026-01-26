@@ -10,9 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="canonical" href="https://dsautocare.com/cargallery" />
-		<link rel="icon" href="static/assets/favicon16.png" type="image/png">
-		<link rel="stylesheet" href="static/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="{{ url_for('static', filename='assets/favicon16.png') }}" type="image/png">
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -58,15 +58,15 @@
 								<h1>My pride and joy, my forever car...</h1> <br>
 								<h2>Presenting...</h2>
 								<p>Miat.</p>
-								<span class="image main"><img src="static/images/miata1.jpg" alt="" /></span> <br>
-								<span class="image main"><img src="static/images/miata2.jpg" alt="" /></span> <br>
-								<span class="image main"><img src="static/images/miata3.jpg" alt="" /></span> <br>
-								<span class="image main"><img src="static/images/miata4.jpg" alt="" /></span> <br>
-								<span class="image main"><img src="static/images/miata5.jpg" alt="" /></span> <br>
-								<span class="image main"><img src="static/images/miata6.jpg" alt="" /></span> <br>
-								<span class="image main"><img src="static/images/miata7.jpg" alt="" /></span> <br>
-								<span class="image main"><img src="static/images/miata8.jpg" alt="" /></span> <br>
-								<span class="image main"><img src="static/images/miata9.jpg" alt="" /></span> <br>
+								<span class="image main"><img src="{{ url_for('static', filename='images/miata1.jpg') }}" alt="" /></span> <br>
+								<span class="image main"><img src="{{ url_for('static', filename='images/miata2.jpg') }}" alt="" /></span> <br>
+								<span class="image main"><img src="{{ url_for('static', filename='images/miata3.jpg') }}" alt="" /></span> <br>
+								<span class="image main"><img src="{{ url_for('static', filename='images/miata4.jpg') }}" alt="" /></span> <br>
+								<span class="image main"><img src="{{ url_for('static', filename='images/miata5.jpg') }}" alt="" /></span> <br>
+								<span class="image main"><img src="{{ url_for('static', filename='images/miata6.jpg') }}" alt="" /></span> <br>
+								<span class="image main"><img src="{{ url_for('static', filename='images/miata7.jpg') }}" alt="" /></span> <br>
+								<span class="image main"><img src="{{ url_for('static', filename='images/miata8.jpg') }}" alt="" /></span> <br>
+								<span class="image main"><img src="{{ url_for('static', filename='images/miata9.jpg') }}" alt="" /></span> <br>
 
 
 							</article>
@@ -78,9 +78,9 @@
 
 							<h1>Fan Favourite</h1> <br>
 							<h2>(the old guys on main st)</h2>
-							<span class="image main"><img src="static/images/camaro1.jpg" alt="" /></span> <br>
-							<span class="image main"><img src="static/images/camaro2.jpg" alt="" /></span> <br>
-							<span class="image main"><img src="static/images/camaro3.jpg" alt="" /></span> <br>
+							<span class="image main"><img src="{{ url_for('static', filename='images/camaro1.jpg') }}" alt="" /></span> <br>
+							<span class="image main"><img src="{{ url_for('static', filename='images/camaro2.jpg') }}" alt="" /></span> <br>
+							<span class="image main"><img src="{{ url_for('static', filename='images/camaro3.jpg') }}" alt="" /></span> <br>
 							<span class="image main"><img src="static/images/camaro4.jpg" alt="" /></span> <br>
 							<span class="image main"><img src="static/images/camaro5.jpg" alt="" /></span> <br>
 							<span class="image main"><img src="static/images/camaro6.jpg" alt="" /></span> <br>
@@ -401,11 +401,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
-			<script src="static/assets/js/jquery.min.js"></script>
-			<script src="static/assets/js/browser.min.js"></script>
-			<script src="static/assets/js/breakpoints.min.js"></script>
-			<script src="static/assets/js/util.js"></script>
-			<script src="static/assets/js/main.js"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 
 	</body>
 </html>
