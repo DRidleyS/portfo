@@ -14,12 +14,11 @@
         />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="canonical" href="https://dsautocare.com/" />
-    <link rel="icon" href="{{ url_for('static', filename='assets/favicon16.png') }}" type="image/png">
+    <link rel="icon" href="{{ url_for('static', filename='images/dslogo.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 	<body class="is-preload">
@@ -983,7 +982,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
-      <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
       <script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
       <script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
       <script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
