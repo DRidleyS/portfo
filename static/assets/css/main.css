@@ -2184,6 +2184,8 @@ nav a {
 
   .side-logo-left.ds-logo {
     height: 60px !important; /* 2.4x bigger on small mobile (from base 50px) */
+    top: 42px !important; /* Move down to align better on small screens */
+    left: 15px;
   }
 
   .system-x-logo {
@@ -2211,4 +2213,27 @@ nav a {
 
 .header-top {
   margin-top: 0 !important;
+}
+
+/* Make content images span the full width of their section/article and scale height */
+/* Targets images inside main articles/sections, image containers, and testimonial photos. */
+#main article img,
+#main section img,
+.image-container img,
+.testimonial-photos img,
+.testimonial-photos--stacked img,
+.testimonial-photos--stacked a img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 16px !important;
+}
+
+/* Ensure containers occupy full width so images can expand */
+.image-container,
+.testimonial-photos,
+.testimonial-photos--stacked {
+  width: 100%;
 }
